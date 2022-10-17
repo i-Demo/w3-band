@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+#main h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+#main p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#main i {
+    opacity: 0.6;
+}
+
+/* --Header */
+#header {
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#header #nav {
+    float: left;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover>a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0px 24px;
+    line-height: 46px;
+    color: #fff;
+    display: block;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+}
+
+#nav .more-icon {
+    font-size: 10px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+
+
+#nav .subnav li {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 8px 16px;
+    min-width: 160px;
+    line-height: 22.5px;
+}
+
+#header .mobile-icon,
+#header .search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#header .search-icon:hover {
+    background-color: #f44336 !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* --Slider */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    background-color: #333;
+    /* padding-top: 50%; */
+    /* background: url(../img/la\ \(1\).jpg) top center / 100% no-repeat; */
+}
+#slider .slider__container {
+    display: none;   
+}
+
+.show {
+    display: block!important;
+}
+
+#slider .content {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 32px 16px;
+}
+
+#slider h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+#slider p {
+    font-size: 15px;
+    margin: 15px;
+}
+
+/* Content */
+/* #container {
+    height: 1000px;
+} */
+
+/* About */
+#container .about {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin: auto;
+    text-align: center;
+}
+
+#container .desc {
+    text-align: justify;
+}
+
+#container .members {
+    padding: 32px 0;
+}
+
+#container .member {
+    width: 32%;
+    /* float: left; */
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#container .members img {
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Tour */
+
+#container .tour {
+    background-color: #000;
+}
+
+.tour i {
+    font-style: normal;
+}
+
+.tour .tour-i {
+    margin-bottom: 40px !important;
+}
+
+#container .tour-dates {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 64px 16px;
+    /* background-color: #fff; */
+    color: #fff;
+}
+
+.tour .month-tours li {
+    text-align: left;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+
+.tour .sold {
+    color: #fff;
+    background-color: #f44336;
+    padding: 0 8px;
+    margin: 0 0 0 16px;
+    display: inline-block;
+}
+
+.tour .amount {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+    /* display: inline-block; */
+    padding: 0 8px;
+}
+
+.tour .place-tours {
+    padding: 32px 8px;
+    margin: 0 -16px;
+}
+
+.tour .place-tour {
+    /* background-color: #fff; */
+    /* display: inline-block; */
+    float: left;
+    width: 33.3333%;
+    color: #000;
+    text-align: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    /* box-sizing: border-box; */
+}
+
+.tour .place-tours img {
+    display: block;
+}
+
+.tour .place-tours img:hover {
+    opacity: 0.6;
+}
+
+.tour .place-tour .content {
+    padding: 0 16px;
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+.tour .place-tour .btn {
+    float: left !important;
+    margin-top: 0 !important;
+}
+
+/* Contact */
+
+#container .contact {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 64px 16px;
+    /* overflow: hidden; */
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#container .contact-form {
+    padding: 32px 0;
+}
+
+#container .info {
+    float: left;
+    text-align: left;
+}
+
+#container .info p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#container .info .icon {
+    opacity: 1;
+    font-weight: 900;
+    margin-right: 16px;
+}
+
+#container .info a {
+    text-decoration: none !important;
+}
+
+#container .form {
+    float: right;
+}
+
+#container .form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* margin: 5px; */
+    /* font-size: 12px; */
+}
+
+#container .form .half-width {
+    float: left;
+    width: 50%;
+    padding: 0px 8px;
+}
+
+#container .form .full-row {
+    margin: 0px -8px 8px;
+}
+
+#container .form .full-row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* #container .form input */
+
+#container .form .message {
+    width: 100%;
+}
+
+#container .btn {
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 16px 0;
+    font-size: 16px;
+    float: right;
+}
+
+#container .btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Footer */
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    margin-top: -6px;
+}
+
+#footer .icons {
+    font-size: 22px;
+    padding-top: 5px;
+}
+
+#footer .power a:hover,
+#footer i[class^="ti-"]:hover {
+    opacity: 0.3;
+}
+
+#footer .power {
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+#footer .power a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* padding-top: 100px; */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    display: none;
+}
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    margin: auto;
+    color: #000;
+    position: relative;
+    animation: modalAnimation ease 0.4s;
+}
+
+.modal .modal-header {
+    background-color: #009688 !important;
+}
+
+.modal .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 16px 16px;
+    color: #fff;
+}
+
+.modal .modal-close:hover {
+    color: #000;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.modal-header h2 {
+    /* margin: 10px 0; */
+    font-size: 30px;
+    color: #fff;
+    padding: 42px 16px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.modal .modal-content {
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+
+.modal-content .label {
+    margin: 15px 0;
+}
+
+.modal-content .modal-input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+}
+
+.modal-content .pay {
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal-content .pay:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-content .close {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    margin: 16px 0px;
+    padding: 11px 14px;
+    border: none;
+    font-weight: 600;
+}
+
+.modal-content .close:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-content .close .close-icon {
+    font-size: 10px;
+}
+
+.modal-content .modal-help {
+    float: right;
+    margin: 15px 0px;
+}
+
+@keyframes modalAnimation {
+    from {
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

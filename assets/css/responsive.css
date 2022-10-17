@@ -1,0 +1,78 @@
+@media (min-width :1024px) {
+    
+}
+@media (min-width :740px) and (max-width :1023px) {
+    
+}
+@media (max-width: 740px) {
+    #nav li {
+        display: block;
+    }
+
+    #nav li:nth-child(1) {
+        display: inline-block;
+    } 
+
+    #header {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+    }
+
+    #header #nav{
+        width: 100%;
+    }
+
+    #header .more-icon,
+    #header .search-icon {
+        display: none;
+    }
+    #header .mobile-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block !important;
+    }
+
+    #header .mobile-icon:hover {
+        background-color: #ccc;
+    }
+    #header .mobile-icon:hover i{
+        color: #000;
+    }
+
+    #slider h2,
+    #slider p {
+        display: none;
+    }
+
+    #container .member {
+        width: 100%;
+    }
+
+    .tour .place-tour {
+        width: 100%;
+    }
+
+    #contact .form {
+        margin-top: 16px;
+        width: 100%;
+    }
+    
+    #contact .form ::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /* #contact .half-width > input {
+        width: 100%;
+    } */
+
+    /* #contact .half-width {
+        float: none !important;
+        width: 100% !important;
+    } */
+   
+   
+}
